@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+}
+
+body {
+  padding-top: 100px;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 5px 50px;
+  z-index: 1;
+}
+
+#nav-pinterest {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+}
+
+.logo i {
+  font-size: 2rem;
+  color: red;
+}
+
+#inicio-btn {
+  padding: 1rem;
+  background: #000;
+  border-radius: 35px;
+  color: white;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.search {
+  width: 800px;
+  height: 55px;
+  background: #edecec;
+  border-radius: 80px;
+  padding: 0 1.25rem;
+}
+
+.search i {
+  color: #555;
+}
+
+.finder {
+  border: none;
+  background: transparent;
+  width: 90%;
+  height: 100%;
+  outline: none;
+  padding: 0 .625rem;
+  font-size: 16px;
+  margin: 0 .625rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icons i {
+  font-size: 1.625rem;
+  color: #333;
+  padding: .6rem;
+}
+
+/* gallery */
+
+img {
+  max-width: 100%;
+  margin-bottom: 0.5em;
+  display: block;
+  border-radius: 1em;
+}
+
+#content {
+  columns: 6 235px;
+  column-gap: 1em;
+  padding: 10px;
+}
+
+.card-img {
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.image {
+  display: block;
+}
+
+.img-overlay {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+}
+
+
+
+.img-btn {
+  background-color: rgba(255, 0, 0, 0.899);
+  text-decoration: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  letter-spacing: 2px;
+  border-radius: 1.8rem;
+  margin-bottom: 30rem;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: background-color 0.25s;
+}
+
+.img-btn:hover {
+  cursor: pointer;
+  background: rgb(199, 3, 3);
+}
+
+.img-overlay:hover {
+  opacity: 1;
+}
+
+.icons i:hover {
+  background: rgba(0, 0, 0, 0.122);
+  border-radius: 100%;
+}
+
+
+@media (max-width: 900px) {
+
+  #explorar,
+  #crear {
+    display: none;
+  }
+
+  #navbar-pinterest {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 540px) {
+
+  .search {
+    display: none;
+  }
+
+}
